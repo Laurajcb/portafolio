@@ -1,0 +1,36 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.navbar-logo {
+  height: 78px;
+  width: 160px;
+}
+
+.nav-list-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--md);
+  color: var(--text-color);
+}
+
+.nav-list-menu:last-child {
+  margin-right: 80px;
+}
+
+.nav-list-menu li {
+  margin: 0 0 0 20px;
+}
+
+.navbar-line {
+  margin: 0;
+  border: 0.5px solid var(--main-color-teal);
+}
