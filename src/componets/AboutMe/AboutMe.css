@@ -1,3 +1,31 @@
-.container-aboutMe-section{
-    background-color: var(--mid-brown);
+.container-aboutMe-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.aboutMe-section-title {
+    color: var(--main-color-teal);
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+.aboutMe-section-text {
+    color: var(--text-color);
+    text-align: justify;
+    letter-spacing: .05em;
+    line-height: 2.0625;
+    font-size: var(--lg);
+}
+
+.container-aboutMe-img{
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.aboutMe-div-container{
+    margin: 80px;
 }

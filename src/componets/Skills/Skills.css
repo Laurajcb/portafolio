@@ -1,0 +1,34 @@
+.skills-section-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 100px);
+    
+}
+
+.skills-section-content{
+    margin: 50px 50px 50px 50px;
+    width: 500px;
+    justify-content: flex-start;
+}
+
+.skills-section-title {
+    color: var(--main-color-teal);
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+.skills-section-text{
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 1.0690;
+    font-size: var(--lg);
+}
+
+.skills-section-text-links{
+    margin-top: 30px;
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 1.0690;
+    font-size: var(--lg);
+}
