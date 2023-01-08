@@ -15,9 +15,8 @@
 .aboutMe-section-text {
     color: var(--text-color);
     text-align: justify;
-    letter-spacing: .05em;
-    line-height: 2.0625;
     font-size: var(--lg);
+    font-weight: 100;
 }
 
 .container-aboutMe-img{
@@ -27,5 +26,5 @@
 }
 
 .aboutMe-div-container{
-    margin: 80px;
+    margin: 40px;
 }
