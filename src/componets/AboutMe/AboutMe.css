@@ -1,30 +1,43 @@
 .container-aboutMe-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: calc(100vh - 100px);
+  width: 100%;
+  height: calc(100vh - 100px);
+  scroll-margin-top: 150px;
+}
+
+.container-aboutMe-paper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .aboutMe-section-title {
-    color: var(--main-color-teal);
-    margin-bottom: 50px;
-    font-size: xx-large;
+  color: var(--main-color-teal);
+  margin-bottom: 50px;
+  font-size: 50px;
 }
 
 .aboutMe-section-text {
-    color: var(--text-color);
-    text-align: justify;
-    font-size: var(--lg);
-    font-weight: 100;
+  color: var(--text-color);
+  text-align: justify;
+  font-size: var(--lg);
+  font-weight: 100;
 }
 
-.container-aboutMe-img{
-    width: 600px;
-    height: 500px;
-    margin-top: 50px;
+.aboutMe-list {
+  list-style-type: circle;
+  margin-top:40px;
+  margin-left: 50px;
+  font-size: var(--lg);
+  font-weight: 100;
+}
+
+.container-aboutMe-img {
+  width: 600px;
+  height: 500px;
+  margin-top: 50px;
 }
 
 .aboutMe-div-container{
-    margin: 40px;
+  margin: 50px;
+  width: 80%;
 }

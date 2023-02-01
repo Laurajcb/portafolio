@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  scroll-margin-top: 110px;
   height: calc(100vh - 100px);
-  padding: 50px;
 }
 
 .skills-section-content {
-  width: 50%;
+  width: 60%;
 }
 
 .skills-section-title {
@@ -23,7 +23,7 @@
 }
 
 .skills-section-text-links {
-  margin-top: 30px;
+  margin-top: 100px;
   line-height: 1.0690;
   text-align: justify;
   color: var(--text-color);
@@ -33,18 +33,23 @@
 .skills-section-anchor {
   text-decoration: none;
   line-height: 1.0690;
-  color: var(--main-color-teal);
+  color: var(--links);
   font-size: var(--lg);
+}
+
+.skills-section-anchor:hover{
+  color: var(--main-color-teal);
 }
 
 .skills-section-conatainer-logos{
   flex: 1;
-  margin: 46px  0 0 114px;
+  margin: 138px  0 0 114px;
+  
 }
 
 
 .skills-section-logos img {
-  height: 100px;
-  width: 100px
-  
+  height: 90px;
+  width: 90px;
+  margin-bottom: 25px;
 }

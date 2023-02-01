@@ -3,10 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   font-family: 'Signika Negative', sans-serif;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #FFE3ED;
 }
 
 .navbar-logo {
-  height: 78px;
+  height: 65px;
   width: 160px;
 }
 
@@ -18,7 +22,11 @@
   list-style: none;
   align-items: center;
   justify-content: flex-end;
-  
+}
+
+ul li .navbar-link{
+  color: var(--main-color-teal);
+  font-weight: 500;
 }
 
 .nav-list-menu:last-child {
@@ -29,13 +37,12 @@
   margin: 0 0 0 20px;
 }
 
-li .nav-link {
+.navbar-link {
   text-decoration: none;
   font-size: var(--md);
-  color: var(--text-color);
+  color: var(--black);
 }
 
 .navbar-line {
-  margin: 0;
   border: 0.5px solid var(--main-color-teal);
 }
