@@ -1,17 +1,17 @@
 import React from 'react';
 import animation from '../../assets/bubble-gum-workflow.gif';
-import pc from '../../assets/pc.png';
-import imageAbout from '../../assets/imgAboutMe.png';
+import imageAbout from '../../assets/imgAboutMe3.png';
 import { Paper } from '@mui/material';
 import './AboutMe.css';
 
 
 function AboutMe() {
- 
+
   return (
     <>
-      <section className='container-aboutMe-section' id='page-2'>
-        <Paper className='container-aboutMe-paper' elevation='6'>
+      <section className='container-aboutMe-section' id='about-me'>
+        <div className='container-aboutMe-paper' >
+          <img alt='mephoto' src={imageAbout} className='container-aboutMe-img' />
           <div className='aboutMe-div-container'>
             <h2 className='aboutMe-section-title'>About me</h2>
             <p className='aboutMe-section-text'>
@@ -38,8 +38,8 @@ function AboutMe() {
               </li>
             </ul>
           </div>
-          <img alt='mephoto' src={imageAbout} className='container-aboutMe-img' />
-        </Paper>
+
+        </div>
       </section>
     </>
   )

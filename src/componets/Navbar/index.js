@@ -9,19 +9,22 @@ function Navbar() {
   return (
     <>
       <nav className='navbar-container'>
-        <img src={Logo} alt="logo" className='navbar-logo'/>
+        <img src={Logo} alt="logo" className='navbar-logo' />
         <ul className='nav-list-menu'>
           <li className='navbar-item'>
-            <a href="#page-1" className='navbar-link' >Home</a>
+            <a href="#home" className='navbar-link' >Home</a>
           </li>
           <li className='navbar-item'>
-            <a href="#page-2" className='navbar-link' >About me</a>
+            <a href="#about-me" className='navbar-link' >About me</a>
           </li>
           <li className='navbar-item'>
-            <a href="#page-3" className='navbar-link' >My Skills</a>
+            <a href="#skills" className='navbar-link' >My Skills</a>
           </li>
           <li className='navbar-item'>
-            <a href="#page-4" className='navbar-link' >Contact me</a>
+            <a href="#projects" className='navbar-link' >Projects</a>
+          </li>
+          <li className='navbar-item'>
+            <a href="#contact-me" className='navbar-link' >Contact me</a>
           </li>
         </ul>
       </nav>

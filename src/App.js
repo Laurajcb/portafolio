@@ -6,18 +6,21 @@ import { AboutMe } from './componets/AboutMe';
 import { Skills } from './componets/Skills';
 import { ContactMe } from './componets/ContactMe';
 import { Container } from '@mui/system';
+import { Projects } from './componets/Projects';
 import './App.css';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Home />
       <Container maxWidth={false} >
-        <Home />
         <AboutMe />
         <Skills />
+        <Projects />
         <ContactMe />
       </Container>
+
     </>
   );
 }

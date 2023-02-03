@@ -13,7 +13,7 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <section className='skills-section-container scroll-page' id='page-3'>
+    <section className='skills-section-container scroll-page' id='skills'>
       <section className='skills-section-conatainer-logos'>
         <div className='skills-section-logos'>
           <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 4 }}>

@@ -32,9 +32,13 @@
 }
 
 .container-aboutMe-img {
-  width: 600px;
-  height: 500px;
-  margin-top: 50px;
+  width: 388px;
+  height: 352px;
+  margin-top: 250px;
+  margin-left: -167px;
+  background: var(--links2);
+  border-top-left-radius: 189px;
+  border-top-right-radius: 189px;
 }
 
 .aboutMe-div-container{
