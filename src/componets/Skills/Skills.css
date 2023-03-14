@@ -2,133 +2,151 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 110px;
-  height: calc(100vh - 100px);
+  justify-content: space-evenly;
+  background-color: var(--primary-blue);
+  scroll-margin-top: 6.8rem;
+  height: 100vh;
+}
+
+.skills-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 0 3rem;
 }
 
 .skills-section-title {
-  color: var(--links);
-  margin-bottom: 50px;
-  font-size: 38px;
+  color: var(--primary-pink);
+  font-size: var(--tablet-title);
 }
 
-hr {
-  border: 0.5px solid var(--main-color-teal);
-  width: 80%;
-  margin-bottom: 50px;
+.skills-title_tech {
+  color: var(--primary-pink);
+  font-size: var(--tablet-md);
+  margin: 3rem;
+}
+
+.skills_tech_icon {
+  color: var(--white);
+}
+
+.skills-div_card {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-div-container_cards {
+  background-color: rgba(227, 233, 241, 0.434);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.skills-div_card_p {
+  font-size: var(--tablet-md);
+  margin-left: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills-section_content {
   display: flex;
-  flex-direction: row;
-}
-
-.skills-div_card_p {
-  font-size: 20px;
-}
-
-.skills-section-text-links {
-  margin-top: 100px;
-  line-height: 1.0690;
-  text-align: justify;
-  font-size: 20px;
-}
-
-.skills-section-anchor {
-  text-decoration: none;
-  line-height: 1.0690;
-  color: var(--links);
-  font-size: 25px;
-}
-
-.skills-section-anchor:hover {
-  color: var(--main-color-teal);
-}
-
-.skills-section-conatainer-logos {
-  flex: 1;
-  margin: 138px 0 0 114px;
-
+  flex-direction: column;
+  margin: 3rem;
+  padding-left: 5rem;
 }
 
 .grid-icon {
-  color: var(--main-color-teal);
-  font-size: 60px;
+  color: var(--white);
+  font-size: 3.8rem;
+  margin-bottom: 0.3rem;
 }
-
-.skills-section-logos img {
-  height: 90px;
-  width: 90px;
-  margin-bottom: 25px;
-}
-
-.skills-div-container_cards {
-  border: 3px solid var(--links);
-  border-radius: 16px;
-  padding: 20px;
-}
-
-.skills-div-container_cards:hover {
-  background: var(--main-color-teal);
-}
-
-.icon {
-  font-size: 34px;
-  color: var(--links);
-}
-
 
 .skills-section-content_links {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
-  width: 100%;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.skills-section-anchor {
+  background-color: var(--primary-pink);
+  font-size: var(--tablet-sm);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
 .skills-section_btn {
-  height: 50px;
-  width: 150px;
-  margin-left: 15px;
-  color: var(--main-color-teal);
-  background-color: var(--links2);
-  border: 2px solid var(--links);
-  font-size: 16px;
-  border-radius: 12px;
+  background-color: var(--primary-pink);
+  font-size: var(--tablet-sm);
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
+  cursor: pointer;
 }
 
-@media (max-width: 640px) {
-  .grid-icon {
-    font-size: 34px;
+/* Tablet and Smaller Desktop */
+@media (min-width: 500px) and (max-width: 900px) {}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .skills-section-container {
+    align-items: center;
   }
 
-  .skills-section_content {
+  .skills-div {
+    width: 85%;
     flex-direction: column;
-  }
-
-  hr {
-    margin-bottom: 5px;
   }
 
   .skills-section-title {
-    margin-bottom: 80px;
+    font-size: var(--desktop-title);
   }
 
+  .skills-title_tech {
+    font-size: var(--desktop-lg);
+    margin: 0 0 3.5rem 0;
+  }
   .skills-div-container_cards {
-    margin-top: 80px;
+    width: 35%;
+    margin-left: 7rem;
+  }
+  .icon {
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
   }
 
-  .skills-section-text-links,
-  .skills-section-anchor {
-    font-size: 20px;
-  }
-
-  .skills-section-content_links {
+  .skills_technologies{
+    display: flex;
     flex-direction: column;
   }
 
-  .skills-section_btn {
-    margin-top: 30px;
+  .grid-icon {
+    font-size: 4.8rem;
+    margin-bottom: 1.5rem;
   }
 
+  .skills-div_card_p {
+    font-size: var(--desktop-lg);
+  }
+
+  .skills-section-anchor {
+    font-size: var(--desktop-md);
+    padding: 1rem;
+  }
+  
+  .skills-section_btn {
+    font-size: var(--desktop-md);
+    margin-top: 0;
+    padding: 1rem;
+  }
+  
 }

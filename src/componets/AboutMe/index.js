@@ -15,6 +15,7 @@ function AboutMe() {
               I am a team player who enjoys collaborating with designers, developers, and stakeholders to ensure project success. To stay up-to-date with the latest technologies and trends in FrontEnd development, I make it a priority to continually learn and grow.
               <br />
               I look forward to the opportunity to work with you on your next project.
+              <br />
               Some of the qualities that you will see when working with me are:
             </p>
             <ul className='aboutMe-list'>
