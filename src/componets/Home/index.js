@@ -1,20 +1,14 @@
 import React from 'react';
-import { AboutMe } from '../AboutMe';
-import { Skills } from '../Skills';
-import { ContactMe } from '../ContactMe';
-import girlImg from '../../assets/main-img.png';
-import { Button } from '@mui/material';
+import girlImg from '../../assets/home-img.png';
 import { FaArrowDown } from 'react-icons/fa';
-
-
 import './Home.css';
 
 function Home() {
 
   return (
     <>
-      <section className='home-section-conatiner scroll-page' id="home">
-        <div className='home-section-container__up'>
+      <section className='home-section-container' id="home">
+        <div className='home-section-container_up'>
           <h4 className='home-section_hi'>Hi, I'm</h4>
           <h2 className='home-section_title'>
             Laura Callejas
@@ -22,11 +16,8 @@ function Home() {
           <h3 className='home-section-subtitle'>
             Bilingual Software Developer.
           </h3>
-
-          <div className='separator'></div>
-
         </div>
-        <div className='home-right-section'>
+        <div className='home-section-container_down'>
           <img
             className='home-section-img'
             alt='-section-img'
@@ -34,8 +25,8 @@ function Home() {
           />
         </div>
         <button className='home-button'>
-          <a href="#page-2" className='home-button-more'>
-          < FaArrowDown />
+          <a href="#about-me" className='home-btn_a'>
+            <FaArrowDown />
           </a>
         </button>
       </section>

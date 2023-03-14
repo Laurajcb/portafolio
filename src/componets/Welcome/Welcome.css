@@ -1,0 +1,11 @@
+.welcome_container {
+  background-color: var(--primary-blue);
+}
+.welcome_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1.25rem;
+  background-color: var(--primary-blue);
+}

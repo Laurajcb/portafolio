@@ -1,55 +1,134 @@
 .skills-section-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   scroll-margin-top: 110px;
   height: calc(100vh - 100px);
 }
 
-.skills-section-content {
-  width: 60%;
-}
-
 .skills-section-title {
-  color: var(--main-color-teal);
+  color: var(--links);
   margin-bottom: 50px;
-  font-size: 3rem;
+  font-size: 38px;
 }
 
-.skills-section-text {
-  text-align: justify;
-  color: var(--text-color);
-  font-size: var(--lg);
+hr {
+  border: 0.5px solid var(--main-color-teal);
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.skills-section_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-div_card_p {
+  font-size: 20px;
 }
 
 .skills-section-text-links {
   margin-top: 100px;
   line-height: 1.0690;
   text-align: justify;
-  color: var(--text-color);
-  font-size: var(--lg);
+  font-size: 20px;
 }
 
 .skills-section-anchor {
   text-decoration: none;
   line-height: 1.0690;
   color: var(--links);
-  font-size: var(--lg);
+  font-size: 25px;
 }
 
-.skills-section-anchor:hover{
+.skills-section-anchor:hover {
   color: var(--main-color-teal);
 }
 
-.skills-section-conatainer-logos{
+.skills-section-conatainer-logos {
   flex: 1;
-  margin: 138px  0 0 114px;
-  
+  margin: 138px 0 0 114px;
+
 }
 
+.grid-icon {
+  color: var(--main-color-teal);
+  font-size: 60px;
+}
 
 .skills-section-logos img {
   height: 90px;
   width: 90px;
   margin-bottom: 25px;
+}
+
+.skills-div-container_cards {
+  border: 3px solid var(--links);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.skills-div-container_cards:hover {
+  background: var(--main-color-teal);
+}
+
+.icon {
+  font-size: 34px;
+  color: var(--links);
+}
+
+
+.skills-section-content_links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills-section_btn {
+  height: 50px;
+  width: 150px;
+  margin-left: 15px;
+  color: var(--main-color-teal);
+  background-color: var(--links2);
+  border: 2px solid var(--links);
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .grid-icon {
+    font-size: 34px;
+  }
+
+  .skills-section_content {
+    flex-direction: column;
+  }
+
+  hr {
+    margin-bottom: 5px;
+  }
+
+  .skills-section-title {
+    margin-bottom: 80px;
+  }
+
+  .skills-div-container_cards {
+    margin-top: 80px;
+  }
+
+  .skills-section-text-links,
+  .skills-section-anchor {
+    font-size: 20px;
+  }
+
+  .skills-section-content_links {
+    flex-direction: column;
+  }
+
+  .skills-section_btn {
+    margin-top: 30px;
+  }
+
 }

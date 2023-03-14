@@ -39,22 +39,23 @@ function ContactMe() {
         </div>
         <section>
           <Stack container
-            direction="row"
+            direction={{ xs: "column-reverse", md: "row" }}
           >
             <section className='contact-container-links'>
-              <div className='contact-card-icon'>
-                <LinkedInIcon sx={{ color: cyan[500], fontSize: 70 }} />
-                <a className='contact-link' href='https://www.linkedin.com/messaging/'>Message Laurajcb</a>
-                
-              </div>
-              <div className='contact-card-icon'>
-                <MailOutlineIcon sx={{ color: cyan[500], fontSize: 70 }} />
-                <a className='contact-link' href='mailto:callejaslaura96@gmail.com'>Email Laurajcb</a>
-              </div>
-              <div className='contact-card-icon'>
-                <WhatsAppIcon sx={{ color: cyan[500], fontSize: 70 }} />
-                <a className='contact-link' href='https://wa.me/573232963649'>WhatsApp Laurajcb</a>
-              </div>
+              <a  href='https://www.linkedin.com/messaging/' className='contact-card-icon'>
+                <LinkedInIcon sx={{ color: cyan[500], fontSize: 60 }} />
+                <p className='contact-link'>
+                  Message Laurajcb
+                </p>
+              </a>
+              <a href='mailto:callejaslaura96@gmail.com' className='contact-card-icon'>
+                <MailOutlineIcon sx={{ color: cyan[500], fontSize: 60 }} />
+                <p className='contact-link'>Email Laurajcb</p>
+              </a>
+              <a href='https://wa.me/573232963649' className='contact-card-icon'>
+                <WhatsAppIcon sx={{ color: cyan[500], fontSize: 60 }} />
+                <p className='contact-link' href='https://wa.me/573232963649'>WhatsApp Laurajcb</p>
+              </a>
             </section>
             <form
               className='contact-form'
@@ -73,11 +74,10 @@ function ContactMe() {
                 name='message'
                 id='message'
               >
-
               </textarea>
 
-              <button className='contact-button' type='submit'>Send message</button>
-              <div>
+              <div className='bt-section'>
+                <button className='contact-button' type='submit'>Send message</button>
                 {
                   result ? <Result /> : null
                 }

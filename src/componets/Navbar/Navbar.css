@@ -2,48 +2,118 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Signika Negative', sans-serif;
+  align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
-  background: #FFE3ED;
+  height: 5rem;
+  background-color: var(--primary-blue);
 }
 
-
 .navbar-logo {
-  height: 65px;
-  width: 160px;
+  height: 2.5rem;
+  margin-left: 0.5rem;
 }
 
 .nav-list-menu {
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
   align-items: center;
   justify-content: flex-end;
+  display: none;
 }
 
-ul li .navbar-link{
-  color: var(--main-color-teal);
+ul li .navbar-link {
+  color: var(--primary-pink);
   font-weight: 500;
 }
 
-.nav-list-menu:last-child {
-  margin-right: 80px;
+.nav-list-menu li:last-child a {
+  margin-right: 5rem;
 }
 
 .nav-list-menu li {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 1.25rem;
 }
 
 .navbar-link {
   text-decoration: none;
-  font-size: var(--md);
-  color: var(--black);
+  font-size: var(--tablet-md);
+  color: var(--primary-pink);
 }
 
-.navbar-line {
-  border: 0.5px solid var(--main-color-teal);
+.mobile-menu {
+  padding: 2rem;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: var(--tablet-sm);
+  color: var(--primary-blue);
+}
+
+.mobile-menu ul {
+  padding: 0;
+  list-style: none;
+  background: rgba(250, 248, 250, 0.83);
+  color:var(--grey-deep);
+  border-radius: 1rem;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 4rem;
+}
+
+.mobile-menu ul:last-child {
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  padding: 0.7rem;
+}
+
+.mobile-menu ul:last-child li {
+  margin-bottom: 0.3rem;
+}
+
+.hamb-menu_btn {
+  border: none;
+  background: none;
+  margin: 0;
+  display: block;
+}
+
+.hamb-menu_icon {
+  font-size: var(--tablet-lg);
+  color: var(--primary-pink);
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 500px) and (max-width: 900px) {
+  .nav-list-menu {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar-logo{
+    height: 3rem;
+    margin-left: 1rem;
+  }
+
+  .nav-list-menu {
+    display: flex;
+  }
+  .navbar-link{
+    font-size: var(--desktop-sm);
+    color: var(--primary-pink);
+  }
 }

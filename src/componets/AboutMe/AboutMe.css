@@ -1,47 +1,98 @@
 .container-aboutMe-section {
+  display: flex;
   width: 100%;
   height: calc(100vh - 100px);
-  scroll-margin-top: 150px;
+  scroll-margin-top: 100px;
+  background-color: var(--primary-blue);
 }
 
-.container-aboutMe-paper {
+.container-aboutMe {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.aboutMe-div-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  font-weight: 100;
+  width: 85%;
 }
 
 .aboutMe-section-title {
-  color: var(--main-color-teal);
-  margin-bottom: 50px;
-  font-size: 50px;
+  font-size: var(--tablet-title);
+  color: var(--primary-pink);
+  margin-bottom: 3rem;
 }
 
 .aboutMe-section-text {
-  color: var(--text-color);
+  color: var(--white);
   text-align: justify;
-  font-size: var(--lg);
-  font-weight: 100;
+  font-family: var(--tablet-md);
+  margin-bottom: 3rem;
 }
 
 .aboutMe-list {
-  list-style-type: circle;
-  margin-top:40px;
-  margin-left: 50px;
-  font-size: var(--lg);
-  font-weight: 100;
+  font-size: var(--tablet-md);
+  color: var(--white);
 }
+
+li::marker {
+  color: var(--secondary-pink);
+}
+
 
 .container-aboutMe-img {
-  width: 388px;
-  height: 352px;
-  margin-top: 250px;
-  margin-left: -167px;
-  background: var(--links2);
-  border-top-left-radius: 189px;
-  border-top-right-radius: 189px;
+  width: 25rem;
+  height: 22rem;
+  border: 0.4rem solid var(--secondary-blue);
+  border-radius: 3rem;
 }
 
-.aboutMe-div-container{
-  margin: 50px;
-  width: 80%;
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 500px) and (max-width: 900px) {}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .aboutMe-div-container {
+    flex: 1;
+  }
+  .container-aboutMe {
+    flex-direction: row;
+    margin: 0 10rem 0 10rem;
+    align-items: flex-start;
+  }
+
+  .container-aboutMe-img {
+    width: 49rem;
+    height: 49rem;
+   border-radius: 36rem;
+    border: 0.4rem solid var(--secondary-blue);
+    margin-top: 25rem;
+  }
+
+  .aboutMe-section-title {
+    font-size: var(--desktop-title);
+    margin-bottom: 5rem;
+  }
+
+  .aboutMe-section-text {
+    font-size: var(--desktop-lg);
+    margin-bottom: 3rem;
+  }
+
+  .aboutMe-list li{
+    font-size: var(--desktop-lg);
+    color: var(--white);
+    margin-left: 6rem;
+  }
+
+  li::marker {
+    color: var(--secondary-blue);
+  }
+
 }
