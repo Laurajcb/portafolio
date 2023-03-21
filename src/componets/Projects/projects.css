@@ -57,11 +57,10 @@
 }
 
 button {
-  margin: 0 28px 0 10px;
+  
   border: 1px solid var(--main-color-teal);
   border: 2px solid var(--links);
   background: none;
-  padding: 9px;
   background: var(--links2);
   border-radius: 12px;
 }
@@ -71,11 +70,11 @@ button {
   color: var(--main-color-teal);
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
+
 }
 
 .project_card_title {
-  margin: 10px 0 10px 0;
+
   color: var(--main-color-teal);
-  font-weight: 200;
+
 }

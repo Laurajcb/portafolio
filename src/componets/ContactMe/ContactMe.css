@@ -3,31 +3,29 @@
   flex-direction: column;
   height: calc(100vh - 100px);
   scroll-margin-top: 15px;
-  margin-top: 150px;
+  background-color: var(--primary-blue);
+  width: 100vw;
 }
 
-
-.contactMe-container-title {
+.contactMe_fullContent {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
 }
 
 .contactMe-title {
-  color: var(--main-color-teal);
-  font-size: 38px;
-}
-
-.contact-container_bts-form {
-  display: flex;
-  flex-direction: column;
+  color: var(--primary-pink);
+  font-size: var(--tablet-title);
+  margin: 3rem 0 0 3rem;
 }
 
 .contact-container-links {
   display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  flex: 1;
+  flex-direction: row;
+  margin-top: 8rem;
+  justify-content: space-evenly;
 }
 
 .contact-card-icon {
@@ -35,113 +33,137 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 260px;
-  height: 178px;
-  margin-bottom: 20px;
-  border-radius: 15px;
   text-decoration: none;
-  background-color: var(--links2);
-  border: 3px solid var(--links);
+  border-radius: 22rem;
+  padding: 0.8rem;
+  border: 0.2rem solid var(--primary-pink);
 }
 
 .contact-link {
-  font-weight: 800;
   color: var(--main-color-teal);
-}
-
-.contact-form-conatainer {
-  display: flex;
-  flex-direction: column;
-  width: 800px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
-  flex: 2;
+}
+
+.contact-form label {
+  font-size: var(--tablet-md);
 }
 
 label {
-  color: var(--main-color-teal);
-  font-weight: 400;
-  font-size: 18px;
+  color: var(--primary-pink);
 }
 
 input {
   border: none;
   margin-bottom: 34px;
   border-bottom: 2px solid var(--links2);
-}
-
-input:focus,
-textarea:focus {
-  outline: thin;
+  height: 3rem;
+  width: 30rem;
+  border-radius: 0.5rem;
 }
 
 .contact-button {
-  width: 150px;
-  height: 70px;
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--main-color-teal);
-  background-color: var(--links2);
-  border: 2px solid var(--links);
-  border-radius: 12px;
+  width: 15rem;
+  height: 4rem;
+  font-size: var(--tablet-md);
+  color: var(--white);
+  background-color: var(--primary-pink);
+  border-radius: 0.8rem;
 }
 
 textarea {
   width: 100%;
-  height: 300px;
-  margin-top: 40px;
-  border: 2px solid var(--links2);
-  border-radius: 4px;
-  padding: 15px;
+  height: 16rem;
+  border-radius: 0.25rem;
+  padding: 0.9rem;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   resize: none;
+  border-radius: 0.5rem;
+}
+
+.contact-link_icon {
+  font-size: var(--tablet-title);
+  color: var(--primary-pink);
+  margin: 1rem;
 }
 
 .contactMe-sent-success {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--main-color-teal);
+  font-size: var(--tablet-sm);
+  color: var(--secondary-pink);
 }
 
-
-.bt-section {
+.btn-section {
   display: flex;
   flex-direction: row;
 }
 
 .contactMe-sent-success {
   width: fit-content;
-  padding-left: 12px;
+  padding-left: 1rem;
 }
 
-@media (max-width: 640px) {
+.contact-link {
+  color: var(--primary-pink);
+  font-size: var(--tablet-sm);
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 390px) and (max-width: 900px) {
   .contactMe-title {
-    font-size: 22px;
+    font-size: var(--tablet-title);
+  }
+
+  .contact-link {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .contactMe-main-container {
+    align-items: center;
+  }
+
+  .contactMe-title {
+    margin: 4rem  3rem;
   }
 
   .contact-container-links {
     display: flex;
-    align-items: center;
-  }
-
-  .contact-link {
-    font-size: 14px;
+    flex-direction: column;
+    margin-right: 5rem;
   }
 
   .contact-card-icon {
-    height: 126px;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 4rem;
   }
 
-  .contact-button {
-    height: 70px;
+  .contact-link {
+    font-size: var(--desktop-md)
   }
 
-  textarea {
-    height: 180px;
+  input {
+    display: block;
+    height: 3.8rem;
+    width: 100rem;
+  }
+
+  .contact-link_icon {
+    font-size: 5rem;
+
+  }
+
+  .contact-container-links {
+    margin-top: 1rem;
+  }
+
+  .contact-button{
+    margin-top: 5rem;
   }
 }

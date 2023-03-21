@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { BsLinkedin } from 'react-icons/bs'
+import { FaWhatsapp } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai'
 import { Stack } from "@mui/material";
-import { cyan } from '@mui/material/colors';
 import './ContactMe.css'
+
 
 function ContactMe() {
   const form = useRef();
@@ -34,27 +34,23 @@ function ContactMe() {
   return (
     <>
       <section className='contactMe-main-container' id='contact-me'>
-        <div className='contactMe-container-title'>
-          <h2 className='contactMe-title'>Let's build something great together!</h2>
-        </div>
-        <section>
-          <Stack container
-            direction={{ xs: "column-reverse", md: "row" }}
-          >
+        <h2 className='contactMe-title'>Let's build something great together!</h2>
+        <section className='contactMe_fullContent'>
+          <Stack container direction={{ xs: "column-reverse", md: "row" }} maxWidth="lg">
             <section className='contact-container-links'>
-              <a  href='https://www.linkedin.com/messaging/' className='contact-card-icon'>
-                <LinkedInIcon sx={{ color: cyan[500], fontSize: 60 }} />
+              <a href='https://www.linkedin.com/messaging/' className='contact-card-icon'>
+                <BsLinkedin className='contact-link_icon' />
                 <p className='contact-link'>
-                  Message Laurajcb
+                  Message
                 </p>
               </a>
               <a href='mailto:callejaslaura96@gmail.com' className='contact-card-icon'>
-                <MailOutlineIcon sx={{ color: cyan[500], fontSize: 60 }} />
-                <p className='contact-link'>Email Laurajcb</p>
+                <AiOutlineMail className='contact-link_icon' />
+                <p className='contact-link'>Email</p>
               </a>
               <a href='https://wa.me/573232963649' className='contact-card-icon'>
-                <WhatsAppIcon sx={{ color: cyan[500], fontSize: 60 }} />
-                <p className='contact-link' href='https://wa.me/573232963649'>WhatsApp Laurajcb</p>
+                <FaWhatsapp className='contact-link_icon' />
+                <p className='contact-link' href='https://wa.me/573232963649'>WhatsApp</p>
               </a>
             </section>
             <form
@@ -76,7 +72,7 @@ function ContactMe() {
               >
               </textarea>
 
-              <div className='bt-section'>
+              <div className='btn-section'>
                 <button className='contact-button' type='submit'>Send message</button>
                 {
                   result ? <Result /> : null

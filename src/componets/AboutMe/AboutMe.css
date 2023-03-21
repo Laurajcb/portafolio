@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: 100;
+  t: 100;
   width: 85%;
 }
 
@@ -38,6 +38,7 @@
 .aboutMe-list {
   font-size: var(--tablet-md);
   color: var(--white);
+  margin-left: 3rem;
 }
 
 li::marker {

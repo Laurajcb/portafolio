@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: var(--primary-blue);
-  scroll-margin-top: 6.8rem;
+  scroll-margin-top: 3rem;
   height: 100vh;
 }
 
@@ -22,7 +22,7 @@
 .skills-title_tech {
   color: var(--primary-pink);
   font-size: var(--tablet-md);
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 .skills_tech_icon {
@@ -66,42 +66,46 @@
 
 .skills-section-content_links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
-  margin-top: 4rem;
 }
 
 .skills-section-anchor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
   background-color: var(--primary-pink);
   font-size: var(--tablet-sm);
   color: var(--white);
-  text-decoration: none;
-  padding: 0.8rem;
   border-radius: 1rem;
   cursor: pointer;
+  margin-bottom: 1rem;
+  text-decoration: none;
+
 }
 
 .skills-section_btn {
   background-color: var(--primary-pink);
   font-size: var(--tablet-sm);
   color: var(--white);
-  padding: 0.8rem;
   border-radius: 1rem;
-  margin-top: 4rem;
+  width: 100%;
+  height: 3rem;
   cursor: pointer;
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 500px) and (max-width: 900px) {}
+@media (min-width: 500px) and (max-width: 900px) {
+  .skills-section_btn {
+    padding: 0rem;
+  }
+}
 
 /* Desktop */
 @media (min-width: 900px) {
-  .skills-section-container {
-    align-items: center;
-  }
-
   .skills-div {
     width: 85%;
     flex-direction: column;
@@ -113,18 +117,20 @@
 
   .skills-title_tech {
     font-size: var(--desktop-lg);
-    margin: 0 0 3.5rem 0;
+    margin: 4rem 0 3.5rem 0;
   }
+
   .skills-div-container_cards {
     width: 35%;
     margin-left: 7rem;
   }
+
   .icon {
     font-size: 4rem;
     margin-bottom: 0.8rem;
   }
 
-  .skills_technologies{
+  .skills_technologies {
     display: flex;
     flex-direction: column;
   }
@@ -137,16 +143,28 @@
   .skills-div_card_p {
     font-size: var(--desktop-lg);
   }
+  .skills-section-content_links{
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .skills-section-anchor {
     font-size: var(--desktop-md);
-    padding: 1rem;
+    margin-bottom: 0rem;
+    width: 30%;
+    padding: 2rem;
+    margin-right: 6rem;
   }
-  
+
   .skills-section_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-size: var(--desktop-md);
-    margin-top: 0;
-    padding: 1rem;
+    padding: 2rem;
+    width: 30%;
+    margin-left: 6rem;
   }
-  
+
 }

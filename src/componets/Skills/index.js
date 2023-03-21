@@ -50,7 +50,7 @@ function Skills() {
             </div>
           </div>
           <section className='skills-section_content' >
-            <h4 className='skills-title_tech'>Technologies:</h4>
+            <h4 className='skills-title_tech'>Technologies </h4>
             <div>
               <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
                 <Grid container direction="row">
