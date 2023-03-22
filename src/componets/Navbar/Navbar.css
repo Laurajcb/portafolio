@@ -28,7 +28,6 @@
 
 ul li .navbar-link {
   color: var(--primary-pink);
-  t: 500;
 }
 
 .nav-list-menu li:last-child a {
