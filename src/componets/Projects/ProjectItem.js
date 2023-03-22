@@ -10,10 +10,10 @@ function ProjectItem(props) {
           <h3 className='project_card_title'>{props.title}</h3>
           <div className='btns_container'>
             <button>
-              <a className='btn-1' href={props.linkPrimaryBtn}>Demo</a>
+              <a className='btn-1' href={props.linkPrimaryBtn}>Vist</a>
             </button>
             <button>
-              <a className='btn-2' href={props.linkSecondaryBtn}>Github repo</a>
+              <a className='btn-2' href={props.linkSecondaryBtn}>Code</a>
             </button>
           </div>
         </div>

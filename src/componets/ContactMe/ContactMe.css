@@ -69,9 +69,10 @@ input {
   width: 15rem;
   height: 4rem;
   font-size: var(--tablet-md);
-  color: var(--white);
-  background-color: var(--primary-pink);
+  color: var(--primary-pink);
+  border: 0.2rem solid var(--primary-pink);
   border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 textarea {
@@ -156,7 +157,6 @@ textarea {
 
   .contact-link_icon {
     font-size: 5rem;
-
   }
 
   .contact-container-links {

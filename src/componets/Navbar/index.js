@@ -41,16 +41,16 @@ function Navbar() {
                   <a href="#home" className='nav-movile_link'>Home</a>
                 </li>
                 <li>
-                  <a href="#about-me" className='nav-movile_link' >About me</a>
+                  <a href="#about-me" className='nav-movile_link' >About</a>
                 </li>
                 <li>
-                  <a href="#skills" className='nav-movile_link' >My Skills</a>
+                  <a href="#skills" className='nav-movile_link' >Skills</a>
                 </li>
                 <li>
                   <a href="#projects" className='nav-movile_link'>Projects</a>
                 </li>
                 <li>
-                  <a href="#contact-me" className='nav-movile_link'>Contact me</a>
+                  <a href="#contact-me" className='nav-movile_link'>Contact</a>
                 </li>
               </ul>
             )

@@ -51,14 +51,14 @@ ul li .navbar-link {
 
 .mobile-menu a {
   text-decoration: none;
-  font-size: var(--tablet-sm);
+  font-size: var(--tablet-md);
   color: var(--primary-blue);
 }
 
 .mobile-menu ul {
   padding: 0;
   list-style: none;
-  background: rgba(250, 248, 250, 0.83);
+  background: rgba(225, 222, 223, 0.919);
   color:var(--grey-deep);
   border-radius: 1rem;
 }
@@ -69,13 +69,13 @@ ul li .navbar-link {
 
 .mobile-menu ul:last-child {
   position: absolute;
-  right: 0.5rem;
-  top: 1rem;
-  padding: 0.7rem;
+  right: 1rem;
+  top: 0.2rem;
+  padding: 2rem;
 }
 
 .mobile-menu ul:last-child li {
-  margin-bottom: 0.3rem;
+  margin: 0.8rem;
 }
 
 .hamb-menu_btn {

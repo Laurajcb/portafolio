@@ -48,10 +48,9 @@ function Projects() {
   ];
 
   return (
-    <div className='wrapper'>
-      <section className='projects-main_container' id='projects'>
-        <h1 className='project_title'>Know my work.</h1>
-        <h5 className='project_subTitle'>Some of my personal projects</h5>
+    <div className='wrapper' id='projects'>
+      <section className='projects-main_container'>
+        <h1 className='project_title'>My Projects</h1>
         <div className='project_cards_container'>
           {projects.map((project) => (
             <ProjectItem

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   background-color: var(--primary-blue);
   scroll-margin-top: 3rem;
   height: 100vh;
@@ -11,12 +10,13 @@
 .skills-div {
   display: flex;
   flex-direction: column;
-  margin: 0 3rem 0 3rem;
+  width: 88%;
 }
 
 .skills-section-title {
   color: var(--primary-pink);
   font-size: var(--tablet-title);
+  margin: 3rem;
 }
 
 .skills-title_tech {
@@ -54,7 +54,7 @@
 .skills-section_content {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 1rem;
   padding-left: 5rem;
 }
 
@@ -68,6 +68,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .skills-section-anchor {
@@ -77,9 +78,9 @@
   justify-content: center;
   width: 100%;
   height: 3rem;
-  background-color: var(--primary-pink);
+  border: 0.1rem solid var(--primary-pink);
   font-size: var(--tablet-sm);
-  color: var(--white);
+  color: var(--primary-pink);
   border-radius: 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
@@ -88,7 +89,7 @@
 }
 
 .skills-section_btn {
-  background-color: var(--primary-pink);
+  background-color: var(--secondary-blue);
   font-size: var(--tablet-sm);
   color: var(--white);
   border-radius: 1rem;
@@ -121,7 +122,7 @@
   }
 
   .skills-div-container_cards {
-    width: 35%;
+    width: 40%;
     margin-left: 7rem;
   }
 
@@ -136,14 +137,15 @@
   }
 
   .grid-icon {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
     margin-bottom: 1.5rem;
   }
 
   .skills-div_card_p {
-    font-size: var(--desktop-lg);
+    font-size: var(--desktop-md);
   }
-  .skills-section-content_links{
+
+  .skills-section-content_links {
     flex-direction: row;
     justify-content: center;
   }
@@ -167,4 +169,7 @@
     margin-left: 6rem;
   }
 
+  .skills-section_content {
+    padding-left: 15rem;
+  }
 }

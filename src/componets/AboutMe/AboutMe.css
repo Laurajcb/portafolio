@@ -11,15 +11,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .aboutMe-div-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  t: 100;
-  width: 85%;
+  width: 84%;
 }
 
 .aboutMe-section-title {
@@ -38,13 +36,12 @@
 .aboutMe-list {
   font-size: var(--tablet-md);
   color: var(--white);
-  margin-left: 3rem;
+  margin-left: 1.8rem;
 }
 
 li::marker {
   color: var(--secondary-pink);
 }
-
 
 .container-aboutMe-img {
   width: 25rem;
@@ -60,8 +57,9 @@ li::marker {
 /* Desktop */
 @media (min-width: 900px) {
   .aboutMe-div-container {
-    flex: 1;
+    flex: 1 auto;
   }
+
   .container-aboutMe {
     flex-direction: row;
     margin: 0 10rem 0 10rem;
@@ -69,11 +67,12 @@ li::marker {
   }
 
   .container-aboutMe-img {
-    width: 49rem;
-    height: 49rem;
-   border-radius: 36rem;
+    width: 46rem;
+    height: 46rem;
+    border-radius: 36rem;
     border: 0.4rem solid var(--secondary-blue);
-    margin-top: 25rem;
+    margin-top: 10rem;
+    margin-left: 3rem;
   }
 
   .aboutMe-section-title {
@@ -82,14 +81,14 @@ li::marker {
   }
 
   .aboutMe-section-text {
-    font-size: var(--desktop-lg);
+    font-size: var(--desktop-sm);
     margin-bottom: 3rem;
   }
 
-  .aboutMe-list li{
-    font-size: var(--desktop-lg);
+  .aboutMe-list li {
+    font-size: var(--desktop-sm);
     color: var(--white);
-    margin-left: 6rem;
+    margin-left: 2rem;
   }
 
   li::marker {
