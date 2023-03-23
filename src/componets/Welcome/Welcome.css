@@ -1,11 +1,24 @@
 .welcome_container {
   background-color: var(--primary-blue);
 }
-.welcome_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 1.25rem;
-  background-color: var(--primary-blue);
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 500px) and (max-width: 900px) {
+  .welcome_logo {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .welcome_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1.25rem;
+    background-color: var(--primary-blue);
+  }
+
 }

@@ -138,7 +138,7 @@
 
   .grid-icon {
     font-size: 4.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .skills-div_card_p {
@@ -148,6 +148,7 @@
   .skills-section-content_links {
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
   }
 
   .skills-section-anchor {

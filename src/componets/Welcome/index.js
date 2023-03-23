@@ -9,7 +9,6 @@ function Welcome() {
   useEffect(() => {
     setTimeout(() => {
       setTime(false)
-      console.log("holaaa", timeOut)
     }, 6000)
   }, [timeOut])
 
