@@ -81,12 +81,12 @@ li::marker {
   }
 
   .aboutMe-section-text {
-    font-size: var(--desktop-sm);
+    font-size: var(--desktop-md);
     margin-bottom: 3rem;
   }
 
   .aboutMe-list li {
-    font-size: var(--desktop-sm);
+    font-size: var(--desktop-md);
     color: var(--white);
     margin-left: 2rem;
   }

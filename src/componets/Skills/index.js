@@ -92,7 +92,7 @@ function Skills() {
         <div className='skills-section-content_links'>
           <a className='skills-section-anchor' href='https://www.linkedin.com/in/laurajcb/'> LinkedIn </a>
           <button className='skills-section_btn' onClick={onBtnClick}>
-            Download CV.
+            Download CV
           </button>
         </div>
       </div >
